@@ -15,6 +15,7 @@ form.onsubmit = (event) => {
     .then(data => {
         const foundUser = data.find(user => user.email === emailinp.value && user.password === passinp.value);
         if (foundUser) {
+            localStorage.setItem('user', JSON.stringify(foundUser));
             location.assign('/vite-project/userpage/userpage.html')
             form.reset();
         } else {

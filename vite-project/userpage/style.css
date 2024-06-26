@@ -61,3 +61,18 @@ header {
     color: rgba(0, 71, 255, 1);
     font-weight: bold;
 }
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.id_sentfromwallet {
+    display: flex;
+    gap: 180px;
+}
+
+.category_summ {
+    display: flex;
+    gap: 180px;
+}

@@ -43,3 +43,21 @@ button {
   color: rgba(0, 71, 255, 1);
   text-decoration: none;
 }
+
+.regbtn {
+  text-decoration: none;
+  color: white;
+  width: 300px;
+  height: 45px;
+  border: 0;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+input::placeholder {
+  padding-left: 15px;
+}
+
+input {
+  padding-left: 10px;
+}

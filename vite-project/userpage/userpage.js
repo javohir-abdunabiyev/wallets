@@ -12,7 +12,7 @@ function reload(user) {
     greeting.classList.add("greeting")
     const emailssilka = document.createElement("a")
     emailssilka.classList.add("emailssilka")
-    emailssilka.href = "#"
+    emailssilka.href = "/vite-project/signin/"
     user.forEach(useri => {
         usermail.innerHTML = useri.email
         greeting.innerHTML = `Добро пожаловать, ${useri.name} ${useri.surname} !`

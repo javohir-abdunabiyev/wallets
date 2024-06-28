@@ -1,11 +1,20 @@
-const usermail = document.querySelector(".usermail")
-fetch("http://localhost:8080/users")
-    .then(res => res.json())
-    .then(user => reload(user))
+try {
+    const user = JSON.parse(localStorage.getItem('currentUser'));
 
-const cont = document.querySelector(".container")
+    const emailElement = document.querySelector('.email p');
+    emailElement.textContent = user.email;
 
-function reload(user) {
+} catch(error) {
+    console.error(error)
+}
+
+const body = document.querySelector("body")
+
+const users = JSON.parse(localStorage.getItem('currentUser'));
+reload(users)
+function reload(useri) {
+    const cont = document.querySelector(".cont")
+
     const greeting_div = document.createElement("div")
     greeting_div.classList.add("greeting_div")
     const greeting = document.createElement("h1")
@@ -13,11 +22,9 @@ function reload(user) {
     const emailssilka = document.createElement("a")
     emailssilka.classList.add("emailssilka")
     emailssilka.href = "/vite-project/signin/"
-    user.forEach(useri => {
-        usermail.innerHTML = useri.email
+    
         greeting.innerHTML = `Добро пожаловать, ${useri.name} ${useri.surname} !`
         emailssilka.innerHTML = useri.email
-    })
 
     greeting_div.append(greeting, emailssilka)
     cont.append(greeting_div)
@@ -67,5 +74,7 @@ function reload(user) {
     about.append(id_sentfromwallet, category_summ)
     last_transactions.append(txt, about)
     cont.append(last_transactions)
+
+
 
 }

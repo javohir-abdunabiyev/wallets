@@ -1,11 +1,26 @@
 {
   "users": [
     {
-      "id": "80f78eff-3950-4c05-a51f-255ccc6327f6",
-      "email": "jahaajahaaa2@gmail.com",
-      "name": "me",
-      "surname": "me",
-      "password": "Jaha2008"
+      "id": "89a0d618-fc19-42d8-be64-5a63d70a9608",
+      "email": "javohirabdunabiyev00@gmail.com",
+      "name": "cx ",
+      "surname": "Abdunabiyev",
+      "password": "1212"
+    },
+    {
+      "id": "5721825d-1cab-4299-944f-11dd079d1011",
+      "email": "jahaajahaaa9043094@gmail.com",
+      "name": "dscd",
+      "surname": "sdcsc",
+      "password": "1212"
+    },
+    {
+      "id": "2cca4d69-224a-4678-badc-5890b3ca640f",
+      "email": "javohirabdunabiyev0@gmail.com",
+      "name": "12",
+      "surname": "12",
+      "password": "1212"
     }
-  ]
+  ],
+  "wallets": []
 }

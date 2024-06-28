@@ -1,57 +1,12 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.forform {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.forform form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.forform a {
-  margin-top: 20px;
-}
-
-input {
-  width: 300px;
-  height: 50px;
-  border-radius: 10px;
-}
-
-button {
-  width: 300px;
-  height: 50px;
-  border-radius: 10px;
-  border: 0;
-  background-color: rgba(0, 71, 255, 1);
-  text-decoration: none;
-  color: white;
-}
-
-.signin {
-  color: rgba(0, 71, 255, 1);
-  text-decoration: none;
-}
-
-.signup {
-  color: rgba(0, 71, 255, 1);
-  text-decoration: none;
-}
-
-.regbtn {
-  text-decoration: none;
-  color: white;
-  width: 300px;
-  height: 45px;
-  border: 0;
-  border-radius: 15px;
-  margin-bottom: 20px;
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 input::placeholder {
@@ -60,4 +15,189 @@ input::placeholder {
 
 input {
   padding-left: 10px;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.signin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.signup_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.signin_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+input {
+    width: 438px;
+    height: 56px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.signup_btn {
+    width: 438px;
+    height: 56px;
+    top: 680px;
+    left: 645px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+    border: 0;
+    background: rgba(0, 71, 255, 1);
+    color: white;
+}
+
+.signup_ssilka {
+    color: rgba(0, 71, 255, 1);
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.signin_ssilka {
+    color: rgba(0, 71, 255, 1);
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.signin_block h1 {
+    margin-bottom: 20px;
+}
+
+.signup_block h1 {
+    margin-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 21px;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+.something {
+    padding: 25px;
+    background: rgba(240, 240, 240, 1);
+}
+
+.nav_logout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email a {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    gap: 21px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
+
+.emailssilka {
+    text-decoration: none;
+    color: rgba(0, 71, 255, 1);
+    font-weight: bold;
+}
+
+.greeting {
+    margin-bottom: 11px;
+    margin-top: 44px;
+}
+
+.greeting_div {
+    margin-bottom: 74px;
+}
+
+.wallets_js {
+    width: 282px;
+    height: 160px;
+    gap: 0px;
+    border-radius: 15px 0px 0px 0px;
+    opacity: 0px;
+    background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
+    border-radius: 15px;
+
+}
+
+.wallets {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 21px;
+}
+
+.watch_all_wallets {
+    color: rgba(0, 71, 255, 1);
+    font-weight: bold;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.id_sentfromwallet {
+    display: flex;
+    gap: 180px;
+}
+
+.category_summ {
+    display: flex;
+    gap: 180px;
 }

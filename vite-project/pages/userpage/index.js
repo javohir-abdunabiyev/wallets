@@ -1,12 +1,10 @@
-try {
+
     const user = JSON.parse(localStorage.getItem('currentUser'));
 
     const emailElement = document.querySelector('.email p');
     emailElement.textContent = user.email;
 
-} catch(error) {
-    console.error(error)
-}
+
 
 const body = document.querySelector("body")
 
@@ -21,7 +19,7 @@ function reload(useri) {
     greeting.classList.add("greeting")
     const emailssilka = document.createElement("a")
     emailssilka.classList.add("emailssilka")
-    emailssilka.href = "/vite-project/signin/"
+    emailssilka.href = "/pages/signup/"
     
         greeting.innerHTML = `Добро пожаловать, ${useri.name} ${useri.surname} !`
         emailssilka.innerHTML = useri.email
@@ -35,7 +33,7 @@ function reload(useri) {
     wallets_place.classList.add("wallets")
     const watch_all_wallets = document.createElement("a")
     watch_all_wallets.innerHTML = "Смотреть все кошельки"
-    watch_all_wallets.href = "#"
+    watch_all_wallets.href = "/pages/allwallets/"
     watch_all_wallets.classList.add("watch_all_wallets")
     cont.append(wallets_place, watch_all_wallets)
 

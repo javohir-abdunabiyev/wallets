@@ -1,24 +1,10 @@
 {
   "users": [
     {
-      "id": "89a0d618-fc19-42d8-be64-5a63d70a9608",
+      "id": "bbe6fcbb-3e9d-4ec1-b792-f1862ec2d9ec",
       "email": "javohirabdunabiyev00@gmail.com",
       "name": "cx ",
       "surname": "Abdunabiyev",
-      "password": "1212"
-    },
-    {
-      "id": "5721825d-1cab-4299-944f-11dd079d1011",
-      "email": "jahaajahaaa9043094@gmail.com",
-      "name": "dscd",
-      "surname": "sdcsc",
-      "password": "1212"
-    },
-    {
-      "id": "2cca4d69-224a-4678-badc-5890b3ca640f",
-      "email": "javohirabdunabiyev0@gmail.com",
-      "name": "12",
-      "surname": "12",
       "password": "1212"
     }
   ],

@@ -1,10 +1,17 @@
 {
   "users": [
     {
-      "id": "bbe6fcbb-3e9d-4ec1-b792-f1862ec2d9ec",
+      "id": "5b0a03f6-a0b1-4a3c-9b05-16a6b06e3679",
       "email": "javohirabdunabiyev00@gmail.com",
-      "name": "cx ",
-      "surname": "Abdunabiyev",
+      "name": "okdmnjd",
+      "surname": "dsfsd",
+      "password": "1212"
+    },
+    {
+      "id": "413565e8-0677-490c-951d-b554ab2415f3",
+      "email": "jahaajahaaa9043094@gmail.com",
+      "name": "edfed",
+      "surname": "efe",
       "password": "1212"
     }
   ],

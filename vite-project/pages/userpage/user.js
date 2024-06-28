@@ -10,7 +10,7 @@ const body = document.querySelector("body")
 
 const users = JSON.parse(localStorage.getItem('currentUser'));
 reload(users)
-function reload(useri) {
+export function reload(useri) {
     const cont = document.querySelector(".cont")
 
     const greeting_div = document.createElement("div")

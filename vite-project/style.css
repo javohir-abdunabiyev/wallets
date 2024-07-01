@@ -185,6 +185,7 @@ nav a {
 .about {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .id_sentfromwallet {
@@ -224,4 +225,58 @@ select {
     border: 0;
     background: rgba(0, 71, 255, 1);
     color: white;
+}
+
+.card {
+    position: relative;
+    width: 282px;
+    height: 160px;
+    border-radius: 15px;
+    border: 1px solid;
+    background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
+    color: white;
+}
+
+.wallet_cont {
+    display: grid;
+    grid-template-columns: repeat(4, 282px);
+    gap: 24px;
+    justify-content: center;
+}
+
+.m_wal {
+    margin-top: 20px;
+    margin-bottom: 93px;
+}
+
+.h3 {
+    margin-top: 19px;
+    margin-left: 23px;
+}
+
+.p {
+    position: absolute;
+    left: 23px;
+    bottom: 17px;
+}
+
+.addwal {
+    width: 438px;
+    height: 56px;
+    gap: 0px;
+    border-radius: 10px;
+    color: white;
+    border: 0;
+    opacity: 0px;
+    background-color:rgba(0, 71, 255, 1);
+    margin-top: 44px;
+}
+
+.t_actions {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.11px;
+    text-align: left;
+    margin-bottom: 10px;  
 }

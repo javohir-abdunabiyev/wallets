@@ -29,9 +29,9 @@ form.onsubmit = async (e) => {
             if (res.status === 200 || res.status === 201) {
                 alert("Вы зарегистрировались");
                 location.assign('/pages/signin/');
+                form.reset();
             }
 
-            form.reset();
         }
     } catch (error) {
         console.error(error);

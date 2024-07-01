@@ -8,14 +8,16 @@
 </head>
 <body>
         <form class="walletsadd" name="walletsadd">
-            <input type="text" name="name" placeholder="Имя вашего кошелька">
-            <input type="number" name="balance" placeholder="Нарисуйте себе баланс">
-            <select name="currency">
-                <option>$</option>
-                <option>€</option>
-                <option>₽</option>
+            <input required type="text" name="name" placeholder="Имя вашего кошелька">
+            <input required type="number" name="balance" placeholder="Нарисуйте себе баланс">
+            <select required class="currency" name="currency">
+                <option value="USD">USD</option>
+                <option value="UZS">UZS</option>
+                <option value="EUR">EUR</option>
             </select>
             <button class="addBtn">Добавить</button>
         </form>
+
+        <script type="module" src="index.js"></script>
 </body>
 </html>

@@ -11,3 +11,24 @@ export async function postData(endpoint, user) {
     }
 
 }
+
+
+export const data = async (path) => {
+    try {
+        const res = await axios.get(base_url + path)
+
+        return res
+    } catch(e) {
+        console.error(error)
+    }
+}
+
+export const actions = async (path) => {
+    try {
+        const res = await axios.get(base_url + path)
+
+        return res
+    } catch(e) {
+        console.error(error)
+    }
+}

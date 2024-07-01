@@ -37,10 +37,8 @@ const select = document.querySelector("select")
 
 data('/wallets?user_id=' + user.id)
     .then(res => {
-        // Очищаем список опций в select
         select.innerHTML = '';
     
-        // Фильтруем кошельки пользователя и добавляем их в select
         res.data.forEach(item => {
             if (item.userID === user.id) {
                 let opt = new Option(item.name, item.id);

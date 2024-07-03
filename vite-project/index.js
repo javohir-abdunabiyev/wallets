@@ -1,3 +1,6 @@
-import { reload } from "./pages/userpage/user";
+import { reloadNav } from "./utils/usernavigation";
 
-reload()
+const user = JSON.parse(localStorage.getItem("currentUser"))
+
+
+reloadNav(user)

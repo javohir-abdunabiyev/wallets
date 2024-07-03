@@ -16,7 +16,6 @@ form.onsubmit = async (e) => {
 
         if (findUser) {
             localStorage.setItem('currentUser', JSON.stringify(findUser));
-
             alert("Вы успешно вошли в аккаунт");
             location.assign('../userpage/');
             form.reset();

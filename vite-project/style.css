@@ -100,6 +100,11 @@ input {
     color: rgba(0, 0, 0, 1);
 }
 
+.for_a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+
 .something {
     padding: 25px;
     background: rgba(240, 240, 240, 1);
@@ -118,21 +123,21 @@ input {
     color: rgba(0, 0, 0, 1);
 }
 
-
-
-
-
-
-
-
-
-
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.logout_mail {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
 }
+
+
+
+
+
+
+
+
+
 
 nav {
     display: flex;
@@ -185,17 +190,20 @@ nav a {
 .about {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(185, 192, 209, 1);
 }
 
 .id_sentfromwallet {
+    width: 400px;
     display: flex;
-    gap: 180px;
+    justify-content: space-between;
 }
 
 .category_summ {
+    width: 400px;
     display: flex;
-    gap: 180px;
+    justify-content: space-between;
 }
 
 .walletsadd {
@@ -205,6 +213,7 @@ nav a {
     justify-content: center;
     text-align: center;
     gap: 10px;
+    margin-top: 30px;
 }
 
 select {
@@ -279,4 +288,36 @@ select {
     line-height: 29.11px;
     text-align: left;
     margin-bottom: 10px;  
+}
+
+.addblc {
+    border: 1px solid red;
+}
+
+
+.about_actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: rgba(185, 192, 209, 1);
+    margin-bottom: 21px;
+}
+
+.id_and_wallet {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categ_and_summ {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_mail {
+    color: rgba(0, 71, 255, 1);
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-top: 20px;
 }

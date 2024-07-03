@@ -8,14 +8,21 @@
     <title>Document</title>
 </head>
 <body>
+
+        <div class="something">
+            <div class="container">
+                <div class="cont"></div>
+            </div> 
+        </div>
+
         <form class="walletsadd" name="walletsadd">
             <input required type="text" name="name" placeholder="Имя вашего кошелька">
             <input required type="number" name="balance" placeholder="Нарисуйте себе баланс">
-            <select required class="currency" name="currency">
-                <option value="USD">USD</option>
-                <option value="UZS">UZS</option>
-                <option value="EUR">EUR</option>
-            </select>
+            
+            <label for="currency_inp">Choose a currency</label>
+            <input list="currencys" id="currency_inp" name="currencys">
+            <datalist id="currencys"></datalist>
+
             <button class="addBtn">Добавить</button>
         </form>
 

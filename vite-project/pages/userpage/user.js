@@ -1,17 +1,25 @@
-
-    const user = JSON.parse(localStorage.getItem('currentUser'));
-
-    const emailElement = document.querySelector('.email p');
-    emailElement.textContent = user.email;
+import { reloadWal } from "../../utils/wallets";
+import { base_url } from "../../utils/http.request";
+import { reloadNav } from "../../utils/usernavigation";
 
 
 
-const body = document.querySelector("body")
+
+
+
 
 export const users = JSON.parse(localStorage.getItem('currentUser'));
+
+
+
 reload(users)
 export function reload(useri) {
     const cont = document.querySelector(".cont")
+    const nav_logouts = document.querySelector(".nav_log")
+
+
+    reloadNav(users, nav_logouts)
+
 
     const greeting_div = document.createElement("div")
     greeting_div.classList.add("greeting_div")
@@ -33,15 +41,20 @@ export function reload(useri) {
     wallets_place.classList.add("wallets")
     const watch_all_wallets = document.createElement("a")
     watch_all_wallets.innerHTML = "Смотреть все кошельки"
-    watch_all_wallets.href = "/pages/allwallets/"
+    watch_all_wallets.href = "/pages/walletpage/"
     watch_all_wallets.classList.add("watch_all_wallets")
-    cont.append(wallets_place)
+    cont.append(wallets_place, watch_all_wallets)
 
-    for(let i = 0; i < 4; i++) {
-        const wallets = document.createElement("div")
-        wallets.classList.add("wallets_js")
-        wallets_place.append(wallets)
-    }
+    fetch(base_url + '/wallets?user_id=' + user.id)
+    .then(response => response.json())
+    .then(walletsData => {
+        reloadWal(walletsData.slice(0, 4), wallets_place);
+    })
+    .catch(error => {
+        console.error('Ошибка при загрузке кошельков:', error);
+    });
+
+
 
     const last_transactions = document.createElement("div")
     const txt = document.createElement("p")
@@ -67,21 +80,7 @@ export function reload(useri) {
 
 
 
-    const actions = document.createElement("div")
-    actions.classList.add("about")
-    const id_action = document.createElement("div")
-    id_action.classList.add("id_sentfromwallet")
-    const idAct = document.createElement("p")
-    idAct.innerHTML = "ID"
-    const Actfromwallet = document.createElement("p")
-    Actfromwallet.innerHTML = "Отправлено с кошелька"
-
-    const category_act = document.createElement("div")
-    category_act.classList.add("category_summ")
-    const categoryAct = document.createElement("p")
-    categoryAct.innerHTML = "Категория"
-    const summAct = document.createElement("p")
-    summAct.innerHTML = "Сумма транзакции"
+    
 
 
     const watch_all_actions = document.createElement("a")
@@ -91,13 +90,11 @@ export function reload(useri) {
 
 
 
-    category_act.append(categoryAct, summAct)
-    id_action.append(idAct, Actfromwallet)
-    actions.append(id_action, category_act)
+    
     category_summ.append(category, summ)
     id_sentfromwallet.append(id, sentfromwallet)
     about.append(id_sentfromwallet, category_summ)
-    last_transactions.append(txt, about, watch_all_actions, actions, watch_all_actions)
+    last_transactions.append(txt, about, watch_all_actions, watch_all_actions)
     cont.append(last_transactions)
 
 

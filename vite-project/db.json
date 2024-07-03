@@ -1,114 +1,58 @@
 {
   "users": [
     {
-      "id": "1035ff43-3251-4b25-85a9-eef9a6ab0fed",
+      "id": "61a9c7ac-e974-476f-ad3f-f3c62a9573cf",
       "email": "javohirabdunabiyev00@gmail.com",
       "name": "123",
-      "surname": "123",
-      "password": "1212"
-    },
-    {
-      "id": "304328aa-e7c9-4d4b-9533-85d77422b325",
-      "email": "jahaajahaaa2@gmail.com",
-      "name": "1212",
-      "surname": "1212",
-      "password": "1212"
-    },
-    {
-      "id": "a20ae4ab-3e91-4bb8-9257-a7ab7ba4b0d0",
-      "email": "javohirabdunabiyev0@gmail.com",
-      "name": "cx ",
       "surname": "Abdunabiyev",
-      "password": "1212"
-    },
-    {
-      "id": "04729b0a-dbad-4b8b-843a-8721f27a68e3",
-      "email": "jahaajahaaa9043094@gmail.com",
-      "name": "1212",
-      "surname": "1212",
-      "password": "1212"
-    },
-    {
-      "id": "5d4e0665-14bf-483e-ba2d-fe19f07443d0",
-      "email": "mksa@gmail.com",
-      "name": "12",
-      "surname": "22",
       "password": "1212"
     }
   ],
   "wallets": [
     {
-      "id": "f98f0753-6ac9-4b3e-9866-dce20b1ea62a",
-      "name": "cx ",
-      "balance": "1212",
+      "id": "15620141-ddf9-4f63-bd05-622da4517cc3",
+      "name": "VISA",
+      "balance": "100",
       "currency": "USD",
-      "created_at": "01.07.2024",
-      "updated_at": "01.07.2024",
-      "userID": "cb48f4e3-2018-4985-a4c8-eda3ac073a40"
-    },
-    {
-      "id": "c5b43ea2-93cb-4549-99a5-5a7e356399b3",
-      "name": "йцуу",
-      "balance": "1212",
-      "currency": "USD",
-      "created_at": "01.07.2024",
-      "updated_at": "01.07.2024",
-      "userID": "304328aa-e7c9-4d4b-9533-85d77422b325"
-    },
-    {
-      "id": "ed765ba8-0cd4-426f-bdd5-f5cf34a24186",
-      "name": "e23efd",
-      "balance": "1212",
-      "currency": "USD",
-      "created_at": "01.07.2024",
-      "updated_at": "01.07.2024",
-      "userID": "304328aa-e7c9-4d4b-9533-85d77422b325"
-    },
-    {
-      "id": "1062d112-0d58-436b-8955-c520c6bb0b1a",
-      "name": "zxzzx",
-      "balance": "1212",
-      "currency": "USD",
-      "created_at": "01.07.2024",
-      "updated_at": "01.07.2024",
-      "userID": "304328aa-e7c9-4d4b-9533-85d77422b325"
-    },
-    {
-      "id": "78ebea84-5577-4ed7-8169-7fba083235b4",
-      "name": "123",
-      "balance": "1212",
-      "currency": "USD",
-      "created_at": "01.07.2024",
-      "updated_at": "01.07.2024",
-      "userID": "304328aa-e7c9-4d4b-9533-85d77422b325"
-    },
-    {
-      "id": "2d2a8719-cd57-41fe-ace6-2d0451416e44",
-      "name": "qwq",
-      "balance": "12121121",
-      "currency": "USD",
-      "created_at": "01.07.2024",
-      "updated_at": "01.07.2024",
-      "userID": "304328aa-e7c9-4d4b-9533-85d77422b325"
-    },
-    {
-      "id": "90ecedf6-d1cf-4b94-967b-bca755863687",
-      "name": "cx 1212",
-      "balance": "1212",
-      "currency": "EUR",
-      "created_at": "01.07.2024",
-      "updated_at": "01.07.2024",
-      "userID": "304328aa-e7c9-4d4b-9533-85d77422b325"
-    },
-    {
-      "id": "735e3eed-ffef-4592-b5e8-0f7f3c82bcb6",
-      "name": "cx 121",
-      "balance": "121212",
-      "currency": "USD",
-      "created_at": "01.07.2024",
-      "updated_at": "01.07.2024",
-      "userID": "5d4e0665-14bf-483e-ba2d-fe19f07443d0"
+      "created_at": "03.07.2024",
+      "updated_at": "03.07.2024",
+      "userID": "61a9c7ac-e974-476f-ad3f-f3c62a9573cf"
     }
   ],
-  "transactions": []
+  "transactions": [
+    {
+      "id": "cba786e3-a776-41f2-90a6-422e540f633f",
+      "fromWallet": "15620141-ddf9-4f63-bd05-622da4517cc3",
+      "created_at": "03.07.2024",
+      "userID": "61a9c7ac-e974-476f-ad3f-f3c62a9573cf",
+      "summ": "100",
+      "category": "car"
+    },
+    {
+      "id": "e95498d6-a7d8-40d0-91dd-85073b14413b",
+      "fromWallet": "15620141-ddf9-4f63-bd05-622da4517cc3",
+      "walletName": "15620141-ddf9-4f63-bd05-622da4517cc3",
+      "created_at": "03.07.2024",
+      "userID": "61a9c7ac-e974-476f-ad3f-f3c62a9573cf",
+      "summ": "30",
+      "category": "car"
+    },
+    {
+      "id": "3bfd8275-7dd3-459c-ae70-fa1c9c39612a",
+      "fromWallet": "15620141-ddf9-4f63-bd05-622da4517cc3",
+      "created_at": "03.07.2024",
+      "userID": "61a9c7ac-e974-476f-ad3f-f3c62a9573cf",
+      "summ": "12",
+      "category": "car"
+    },
+    {
+      "id": "f351e501-7336-4ef0-92ad-d42eab3a1144",
+      "fromWallet": "15620141-ddf9-4f63-bd05-622da4517cc3",
+      "fromWalletName": "VISA",
+      "created_at": "03.07.2024",
+      "userID": "61a9c7ac-e974-476f-ad3f-f3c62a9573cf",
+      "summ": "12",
+      "category": "car"
+    }
+  ]
 }

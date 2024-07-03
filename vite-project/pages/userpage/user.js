@@ -1,7 +1,8 @@
 import { reloadWal } from "../../utils/wallets";
 import { base_url } from "../../utils/http.request";
 import { reloadNav } from "../../utils/usernavigation";
-
+import { actions } from "../../utils/http.request";
+import { data } from "../../utils/http.request";
 
 
 
@@ -45,7 +46,7 @@ export function reload(useri) {
     watch_all_wallets.classList.add("watch_all_wallets")
     cont.append(wallets_place, watch_all_wallets)
 
-    fetch(base_url + '/wallets?user_id=' + user.id)
+    fetch(base_url + '/wallets?user_id=' + useri.id)
     .then(response => response.json())
     .then(walletsData => {
         reloadWal(walletsData.slice(0, 4), wallets_place);
@@ -79,6 +80,17 @@ export function reload(useri) {
     summ.innerHTML = "Сумма транзакции"
 
 
+    const place_for_actions = document.createElement("div")
+
+
+    fetch(base_url + '/transactions?user_id=' + useri.id)
+    .then(response => response.json())
+    .then(actionsData => {
+        actions(actionsData.slice(0, 7), place_for_actions);
+    })
+    .catch(error => {
+        console.error('Ошибка при загрузке транзакций:', error);
+    });
 
     
 
@@ -94,7 +106,7 @@ export function reload(useri) {
     category_summ.append(category, summ)
     id_sentfromwallet.append(id, sentfromwallet)
     about.append(id_sentfromwallet, category_summ)
-    last_transactions.append(txt, about, watch_all_actions, watch_all_actions)
+    last_transactions.append(txt, about, place_for_actions, watch_all_actions, watch_all_actions)
     cont.append(last_transactions)
 
 

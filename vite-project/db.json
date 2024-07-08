@@ -37,6 +37,15 @@
       "userID": "771158ef-723d-4501-949d-d163e04ea3ce",
       "summ": "1000",
       "category": "car"
+    },
+    {
+      "id": "851f06d1-09a0-4052-ae08-c60fa6394bb8",
+      "fromWallet": "197c528f-5b67-4b76-b429-ac488aaac3c3",
+      "fromWalletName": "VISA",
+      "created_at": "08.07.2024",
+      "userID": "771158ef-723d-4501-949d-d163e04ea3ce",
+      "summ": "1000",
+      "category": "car"
     }
   ]
 }

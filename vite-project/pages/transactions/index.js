@@ -83,7 +83,7 @@ addblc.oninput = () => {
                     const newBal = wallet.balance - summ
                     addblc.classList.remove("addblc");
 
-                    axios.put('/wallets/' + wallet.id, { balance: newBalance })
+                    axios.put('/wallets/' + wallet.id, { balance: newBal })
                     .then(updateRes => {
                         addblc.classList.remove("addblc");
                     })

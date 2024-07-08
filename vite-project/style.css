@@ -328,7 +328,7 @@ select {
     width: 480px;
     height: 300px;
     border-radius: 15px;
-    background-image: url(https://psm7.com/wp-content/uploads/2017/04/jdun.jpg);
+    background-image: url(https://habrastorage.org/r/w780/getpro/habr/upload_files/ad2/53c/3ff/ad253c3ffb0dd7918db196f7e8e94555.jpg);
     background-size: cover;
     background-position: center;
     margin-top: 30px;
@@ -394,4 +394,33 @@ select {
 .flex_converter_chart {
     display: flex;
     gap: 50px;
+}
+
+.mycarrency {
+    width: 200px;
+    height: 40px;
+}
+
+.tocurrency {
+    width: 200px;
+    height: 40px;
+}
+
+.from_to {
+    display: flex;
+    gap: 20px;
+}
+
+.amout {
+    width: 325px;
+    margin-top: 20px;
+}
+
+.convert_submit {
+    height: 56px;
+    width: 90px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    border: 0;
 }

@@ -3,6 +3,7 @@ import { data } from "../../utils/http.request";
 import { reloadVanillaJsCard } from "../../utils/walletsdata";
 import { reloadCardsDashboard } from "../../utils/dashboardcards";
 import { Chart, registerables } from 'chart.js';
+import { getFixers } from "../../utils/http.request";
 import moment from "moment";
 
 Chart.register(...registerables);
@@ -84,4 +85,25 @@ export function updateCurrency(walletId) {
         .catch(error => {
             console.error('Ошибка при получении кошелька:', error);
         });
+}
+
+
+const select_two = document.querySelector(".tocurrency")
+
+getFixers('/symbols')
+    .then(symbols => {
+        for(let key in symbols) {
+            let opt = new Option(`${key} - ${symbols[key]}`, key)
+            select_two.append(opt)
+        }
+    })
+
+
+const converter = document.forms.namedItem("converter")
+
+converter.onsubmit = (e) => {
+    e.preventDefault()
+
+    
+
 }

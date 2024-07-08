@@ -1,68 +1,33 @@
 {
   "users": [
     {
-      "id": "f7717aea-6cf1-41e3-b56a-160b5891cc08",
+      "id": "771158ef-723d-4501-949d-d163e04ea3ce",
       "email": "javohirabdunabiyev00@gmail.com",
-      "name": "cx ",
+      "name": "Javohir",
       "surname": "Abdunabiyev",
       "password": "1212"
     }
   ],
   "wallets": [
     {
-      "id": "1751e5be-3cf9-49e5-9d30-40806958239b",
+      "id": "197c528f-5b67-4b76-b429-ac488aaac3c3",
       "name": "VISA",
-      "balance": "12",
-      "currency": "BTC",
-      "created_at": "07.07.2024",
-      "updated_at": "07.07.2024",
-      "userID": "f7717aea-6cf1-41e3-b56a-160b5891cc08"
-    },
-    {
-      "id": "cd3d4071-6c01-442d-9115-12b529ae4d23",
-      "name": "MASTERCARD",
-      "balance": "12",
-      "currency": "BTC",
-      "created_at": "07.07.2024",
-      "updated_at": "07.07.2024",
-      "userID": "f7717aea-6cf1-41e3-b56a-160b5891cc08"
-    },
-    {
-      "id": "82e7ec55-7431-4533-aa36-b612d7754eae",
-      "name": "123",
-      "balance": "12",
-      "currency": "ZMK",
-      "created_at": "07.07.2024",
-      "updated_at": "07.07.2024",
-      "userID": "f7717aea-6cf1-41e3-b56a-160b5891cc08"
-    },
-    {
-      "id": "4eb69cf2-1c78-4546-9d7e-0cf92536b6b0",
-      "name": "qwee",
-      "balance": "1212",
-      "currency": "AOA",
+      "balance": "1000",
+      "currency": "USD",
       "created_at": "08.07.2024",
       "updated_at": "08.07.2024",
-      "userID": "f7717aea-6cf1-41e3-b56a-160b5891cc08"
-    },
-    {
-      "id": "15de9b5f-ecc5-42ae-a2c2-d1d9a9b01070",
-      "name": "e23efd",
-      "balance": "1212",
-      "currency": "12121",
-      "created_at": "08.07.2024",
-      "updated_at": "08.07.2024",
-      "userID": "f7717aea-6cf1-41e3-b56a-160b5891cc08"
-    },
-    {
-      "id": "f2388b85-1856-4e8b-925a-5773db98b720",
-      "name": "1212",
-      "balance": "1212",
-      "currency": "21212",
-      "created_at": "08.07.2024",
-      "updated_at": "08.07.2024",
-      "userID": "f7717aea-6cf1-41e3-b56a-160b5891cc08"
+      "userID": "771158ef-723d-4501-949d-d163e04ea3ce"
     }
   ],
-  "transactions": []
+  "transactions": [
+    {
+      "id": "8dbe1f07-d2fe-4516-9c68-e82fa8f2c0f5",
+      "fromWallet": "197c528f-5b67-4b76-b429-ac488aaac3c3",
+      "fromWalletName": "VISA",
+      "created_at": "08.07.2024",
+      "userID": "771158ef-723d-4501-949d-d163e04ea3ce",
+      "summ": "120",
+      "category": "car"
+    }
+  ]
 }

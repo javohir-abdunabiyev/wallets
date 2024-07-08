@@ -118,7 +118,7 @@ converter.onsubmit = (e) => {
     var requestOptions = {
         method: 'GET',
         redirect: 'follow',
-        headers: myHeaders
+        headers: import.meta.env.VITE_API_KEY,
       };
 
 

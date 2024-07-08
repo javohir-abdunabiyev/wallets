@@ -321,3 +321,77 @@ select {
     margin-bottom: 60px;
     margin-top: 20px;
 }
+
+
+.card_block {
+    position: relative;
+    width: 480px;
+    height: 300px;
+    border-radius: 15px;
+    background-image: url(https://psm7.com/wp-content/uploads/2017/04/jdun.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+}
+
+.card_name {
+    color: white;
+    top: 40px;
+    left: 50px;
+    font-size: 60px;
+    position: absolute;
+}
+
+.card_currency {
+    font-size: 50px;
+    bottom: 40px;
+    left: 50px;
+    color: white;
+    position: absolute;
+}
+
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.all_cards {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card_board {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 70px;
+    border: 1px solid black;
+    margin-left: 25px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.wallet_img {
+    margin-right: 10px;
+}
+
+.line_div {
+    width: 600px;
+}
+
+.flex_converter_chart {
+    display: flex;
+    gap: 50px;
+}

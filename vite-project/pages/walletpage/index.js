@@ -13,7 +13,7 @@ const container = document.querySelector(".cont")
 reloadNav(user, container)
 
 
-data("/wallets?user_id=" + user.id)
+data("/wallets?userID=" + user.id)
     .then(res => {
         if(res.status === 200 || res.status === 201) {
             const userWallets = res.data.filter(wallet => wallet.userID === user.id);

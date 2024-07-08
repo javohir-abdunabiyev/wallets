@@ -8,7 +8,7 @@ export function reloadNav(user, place) {
     const nav_div = document.createElement("div")
     nav_div.classList.add("nav")
     const nav_a = document.createElement("a")
-    nav_a.href = "/pages/userpage/"
+    nav_a.href = "/index.html"
     nav_a.innerHTML = "Главная"
     nav_a.classList.add("for_a")
     const nav_b = document.createElement("a")
@@ -22,7 +22,7 @@ export function reloadNav(user, place) {
 
 
     const logout_a = document.createElement("a")
-    logout_a.href = "#"
+    logout_a.href = "/pages/signup/"
     logout_a.classList.add("logout_mail")
     const email = document.createElement("p")
     email.innerHTML = user.email

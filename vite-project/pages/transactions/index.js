@@ -1,6 +1,7 @@
 import { postData } from "../../utils/http.request";
 import { data } from "../../utils/http.request"
 import { reloadNav } from "../../utils/usernavigation";
+import axios from "axios";
 
 const form = document.forms.namedItem("actionsadd");
 const user = JSON.parse(localStorage.getItem("currentUser"))
@@ -79,7 +80,16 @@ addblc.oninput = () => {
                 if (wallet.balance < summ) {
                     addblc.classList.add("addblc");
                 } else {
+                    const newBal = wallet.balance - summ
                     addblc.classList.remove("addblc");
+
+                    axios.put('/wallets/' + wallet.id, { balance: newBalance })
+                    .then(updateRes => {
+                        addblc.classList.remove("addblc");
+                    })
+                    .catch(error => {
+                        console.error('Ошибка при обновлении баланса:', error);
+                    });
                 }
             }
         })

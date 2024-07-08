@@ -102,6 +102,8 @@ getFixers('/symbols')
 
 const converter = document.forms.namedItem("converter")
 
+const amount_p = document.querySelector(".amount_p")
+
 converter.onsubmit = (e) => {
     e.preventDefault()
 
@@ -125,6 +127,6 @@ converter.onsubmit = (e) => {
 
     axios.get(`https://api.apilayer.com/fixer/convert?to=${convert_inps.to}&from=${convert_inps.from}&amount=${convert_inps.amount}`, requestOptions)
         .then(response => response.text())
-        .then(result => console.log(result))
+        .then(result => amount_p.innerHTML = convert_inps.amount)
         .catch(error => console.log('error', error));
 }

@@ -5,6 +5,7 @@ import { reloadCardsDashboard } from "../../utils/dashboardcards";
 import { Chart, registerables } from 'chart.js';
 import { getFixers } from "../../utils/http.request";
 import moment from "moment";
+import axios from "axios";
 
 Chart.register(...registerables);
 
@@ -104,6 +105,26 @@ const converter = document.forms.namedItem("converter")
 converter.onsubmit = (e) => {
     e.preventDefault()
 
-    
 
+    const fm = new FormData(e.target)
+
+    const convert_inps = {
+        to: fm.get('to'),
+        from: fm.get('from'),
+        amount: fm.get('amount')
+    }
+
+
+    var requestOptions = {
+        method: 'GET',
+        redirect: 'follow',
+        headers: myHeaders
+      };
+
+
+
+    axios.get(`https://api.apilayer.com/fixer/convert?to=${convert_inps.to}&from=${convert_inps.from}&amount=${convert_inps.amount}`, requestOptions)
+        .then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
 }
